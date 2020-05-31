@@ -158,7 +158,8 @@ li:hover {
 
 #section1-content {
     width: 65%;
-    margin: -200px 50px;
+    margin-left: 50px;
+    /* margin: -200px 50px; */
     color: white;
     height: 250px;
     display: flex;
@@ -190,5 +191,6 @@ li:hover {
 
 #section1-content-background {
     background: linear-gradient(to bottom, rgba(51,51,51,0) 0, #333 175px);
+    margin-top: -200px;
 }
 
