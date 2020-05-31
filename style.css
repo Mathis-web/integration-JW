@@ -28,6 +28,16 @@ li {
     list-style-type: none;
 }
 
+.bouton-general {
+    color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #4a6da7;
+    padding: 4px;
+}
+.bouton-general:hover {
+    background-color: #3a5684;
+}
+
 /* HEADER */
 
 #logo {
@@ -104,12 +114,13 @@ li {
 
 header nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 87.5%;
     color: white;
     background-color: #373433;
     height: 44px;
+    padding-left: 20px;
 }
 
 header nav ul li {
@@ -118,7 +129,8 @@ header nav ul li {
     margin-right: 25px;
     cursor: pointer;
     height: 100%;
-    padding: 0 7px;
+    padding: 0 9px;
+    line-height: 15px;
 }
 
 li span img {
@@ -127,4 +139,16 @@ li span img {
 
 li:hover {
     background-color: black;
+}
+
+.icon-nav {
+    color: white;
+}
+
+#section1 {
+    background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/m/502000107/univ/art/502000107_univ_lsr_lg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
 }
