@@ -3,17 +3,17 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Open-sans', sans-serif;
+    font-family: 'Noto sans', sans-serif;
 }
 
 body {
-    background-color: #e6e6e6;
+    background-color: #eceae7;
     display: flex;
     justify-content: center;
 }
 
 .container {
-    width: 60%;
+    width: 1140px;
     background-color: white;
     box-shadow: 1px 1px 10px #cccccc,
                 -1px -1px 10px #cccccc;
@@ -21,7 +21,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #0052cc;
+    color: #4a6da7;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* HEADER */
@@ -34,29 +38,15 @@ a {
     display: flex;
     align-items: center;
     height: 50px;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
-/* #header1 {
-    background-color: #f2f2f2;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 53% 12% 13% 20%;
-    align-items: center;
-} */
-
 #header1 a {
-    font-size: 15px;
-    padding: 5px;
-    margin: 0 10px;
+    margin: 0 5px; 
 }
 
 #header1 a:hover {
-    background-color: red;
-}
-
-#header1 a img {
-    padding: 0 5px;
+    background-color: #c4cfe2;
 }
 
 #header1 h1 {
@@ -64,29 +54,60 @@ a {
     font-size: 23px;
     margin-left: 30px;
     font-weight: 200;
+    width: 50%;
 }
 
 #rechercher {
     background-color: white;
-    padding: 3px;
     display: flex;
     align-items: center;
-    border: solid 1px grey;
+    border: solid 1px rgba(0,0,0,0.1);
+    margin-left: 10px;
 }
 
 #rechercher input {
     border: none;
-    /* width: 300px; */
+    height: 34px;
+    width: 240px; 
+    padding-left: 10px;
+    font-size: 14px;;
 }
 
-#rechercher img {
-    border-left: 1px solid grey;
-    padding-left: 5px;
+#rechercher span {
+    height: 34px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    padding: 0 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 #droite {
     display: flex;
-    width: 70%;
     justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-right: 10px;
+    font-size: 85.7%;
 }
 
+.lien {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    padding: 5px 2px;
+}
+.lien div {
+    margin: 0 4px;
+    line-height: 10px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    background-color: #373433;
+    height: 44px;
+}
