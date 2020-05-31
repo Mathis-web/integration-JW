@@ -46,7 +46,7 @@ li {
 }
 
 #header1 a:hover {
-    background-color: #c4cfe2;
+    background-color: #dee7f1;
 }
 
 #header1 h1 {
@@ -106,8 +106,25 @@ header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 10px;
+    font-size: 87.5%;
     color: white;
     background-color: #373433;
     height: 44px;
+}
+
+header nav ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 7px;
+}
+
+li span img {
+    margin-right: 8px;
+}
+
+li:hover {
+    background-color: black;
 }
