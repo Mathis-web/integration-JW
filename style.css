@@ -322,7 +322,6 @@ li:hover {
 .categorie {
     position: relative;
     margin-right: 20px;
-    cursor: pointer;
 }
 .categorie:hover p{
     text-decoration: underline;
@@ -336,4 +335,36 @@ li:hover {
     bottom: 20px;
     left: 5%;
     width: 250px;
+}
+
+#action {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 30px;
+}
+
+.proposition{
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+}
+.proposition img {
+    border-radius: 50%;
+    width: 220px;
+    height: auto;
+    margin: 20px 0;
+}
+.proposition h4 a{
+    font-size: 23px;
+    font-weight: 400;
+}
+.proposition h4 a:hover{
+    text-decoration: underline;
+}
+.proposition p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    margin: 20px 0;
 }
