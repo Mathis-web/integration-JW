@@ -1,4 +1,4 @@
-lien de chaque image de la page d'accueil de JW.ORG
+lien de quelques images de la page d'accueil de JW.ORG
 
 COMMENT FAIRE FACE A L'ISOLEMENT ?
 https://assetsnffrgf-a.akamaihd.net/assets/m/502000112/univ/art/502000112_univ_lss_lg.jpg
@@ -21,5 +21,15 @@ DIEU A-T-IL UN NOM ?
 https://assetsnffrgf-a.akamaihd.net/assets/m/502014331/univ/art/502014331_univ_pnr_lg.jpg
 
 
-ICONES
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/m/502015540/univ/art/502015540_univ_lsr_lg.jpg)
+
+SLIDER VIDEO
+https://assetsnffrgf-a.akamaihd.net/assets/m/502015752/univ/art/502015752_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/1102013549/univ/art/1102013549_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/1102017111/univ/art/1102017111_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/1102017892/univ/art/1102017892_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/502015143/univ/art/502015143_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/502019103/univ/art/502019103_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/502014315/univ/art/502014315_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/502014311/univ/art/502014311_univ_lss_lg.jpg
+https://assetsnffrgf-a.akamaihd.net/assets/m/1102017423/univ/art/1102017423_univ_lss_lg.jpg
