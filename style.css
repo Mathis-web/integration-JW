@@ -48,6 +48,9 @@ li {
     background-color: #4a6da7;
     padding: 6px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bouton-general:hover {
     background-color: #3a5684;
@@ -201,7 +204,7 @@ li:hover {
 }
 #section1-content a {
     text-align: center;
-    max-width: 185px;
+    max-width: 200px;
     margin: 24px 0;
 }
 
@@ -292,7 +295,7 @@ li:hover {
 #nouveautes a {
     display: flex;
     align-items: center;
-    max-width: 180px;
+    max-width: 190px;
     justify-content: center;
     cursor: pointer;
 }
@@ -304,43 +307,40 @@ li:hover {
 }
 
 #categories {
-    display: flex;
-    flex-direction: column;
-}
-
-#categories div{
-    margin-bottom: 20px;
-    display: flex;
-}
-
-.categorie img {
-    height: auto;
-    width: 100%;
-    /* background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%); */
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 30%);
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .categorie {
-    position: relative;
-    margin-right: 20px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%); */
 }
 .categorie:hover p{
     text-decoration: underline;
 }
-
-.categorie p {
-    position: absolute;
+.categorie-content{
+    height: 90%;
+    padding-left: 5%;
+    display: flex;
+    align-items: flex-end;
+}
+.categorie-content p {
     color: white;
     text-shadow: 0 1px 2px #000000;
-    z-index: 1;
-    bottom: 20px;
-    left: 5%;
-    width: 250px;
 }
 
 #action {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #d4d4d4;
+    margin-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -367,4 +367,105 @@ li:hover {
     line-height: 24px;
     color: #222222;
     margin: 20px 0;
+}
+
+/* SECTION 4 */
+
+#section4 #title{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 0;
+}
+
+#video-description{
+    background-image: url(https://assetsnffrgf-a.akamaihd.net/assets/m/502015540/univ/art/502015540_univ_lsr_lg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    width: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+#video-description-content{
+    color: white;
+    /* background: linear-gradient(to left, rgba(51,51,51,0.9), rgba(51,51,51,0) 75%); */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    justify-content: center;
+    margin-right: 10%;
+}
+#background-video-content{
+    background: linear-gradient(to left, rgba(51,51,51,0.9), rgba(51,51,51,0) 100%);
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#video-description-content h5 a{
+    color: white;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 400;
+}
+#video-description-content h5:hover{
+    text-decoration: underline;
+}
+#video-description-content p{
+    font-size: 19px;
+    line-height: 29px;
+    padding: 20px 0;
+}
+#video-description-content a img{
+    padding-right: 10px;
+}
+#video-description-content .bouton-general{
+    width: 250px;
+}
+
+#slider-videos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#slider-videos .video-content{
+    margin-right: 25px;
+}
+
+#slider-videos .video{
+    position: relative;
+}
+#slider-videos .video:hover{
+    
+}
+
+#slider-videos .video .video-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#slider-videos .video .play-btn{
+    width: 40px;
+    height: 35px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+#slider-videos .video-content .video-lien{
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 24px;
+}
+#slider-videos .video-content .video-lien:hover {
+    text-decoration: underline;
 }
