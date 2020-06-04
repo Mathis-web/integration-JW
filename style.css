@@ -98,7 +98,7 @@ li {
 #rechercher input {
     border: none;
     height: 34px;
-    width: 240px; 
+    width: 260px; 
     padding-left: 10px;
     font-size: 14px;;
 }
@@ -152,16 +152,8 @@ header nav ul li {
     line-height: 15px;
 }
 
-li span img {
-    margin-right: 8px;
-}
-
 li:hover {
     background-color: black;
-}
-
-.icon-nav {
-    color: white;
 }
 
 /* SECTION 1 */
