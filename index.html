@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="ongletsJS.css">
         <title>Les témoins de Jéhovah : site officiel</title>
     </head>
 
     <body>
-<!-- WESHHHH -->
+
         <div class="container">
             <header>
 
@@ -39,23 +40,23 @@
 
                 <nav>
                     <ul>
-                        <li>
+                        <li> 
                             <span><img class="icon-nav" src="icon/house.png"></span>
                             <span>ACCUEIL</span>
                         </li>
-                        <li>
+                        <li data-onglet="la-bible-et-vous">
                             <span><img class="icon-nav" src="icon/book.png"></span>
                             <span>LA BIBLE ET VOUS</span>
                         </li>
-                        <li>
+                        <li data-onglet="bibliotheque">
                             <span><img class="icon-nav" src="icon/multimedia.png"></span>
                             <span>BIBLIOTHEQUE</span>
                         </li>
-                        <li>
+                        <li data-onglet="salle-de-presse">
                             <span><img class="icon-nav" src="icon/internet.png"></span>
                             <span>SALLE DE PRESSE</span>
                         </li>
-                        <li>
+                        <li data-onglet="qui-sommes-nous">
                             <span><img class="icon-nav" src="icon/avatar.png"></span>
                             <span>QUI SOMMES-NOUS ?</span>
                         </li>
@@ -64,7 +65,140 @@
 
             </header>
 
-            <section>
+            <div data-onglet="la-bible-et-vous" class="onglets">
+
+                <div class="bouton-fermer">
+                    <img src="icon/close.png" alt="fermer" height="15px" width="15px">
+                </div>
+
+                <div class="first-lien">
+                    <a href="#">La Bible et vous</a>
+                </div>
+
+                <div class="onglets-content">
+
+                    <div>
+                        <a href="#">Questions bibliques</a>
+                        <a href="#">Que veulent dire ces versets ?</a>
+                        <a href="#">Outils d'étude de la Bible</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Paix intérieur et bonheur</a>
+                        <a href="#">Couples & familles</a>
+                        <a href="#">Adolescents</a>
+                        <a href="#">Enfants</a>
+                    </div>
+
+                    <div>
+                        <a href="#">La foi en Dieu</a>
+                        <a href="#">La Bible et la Science</a>
+                        <a href="#">La Bible et l'Histoire</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div data-onglet="bibliotheque" class="onglets">
+
+                <div class="bouton-fermer">
+                    <img src="icon/close.png" alt="fermer" height="15px" width="15px">
+                </div>
+
+                <div class="first-lien">
+                    <a href="#">Bibliothèque</a>
+                </div>
+
+                <div class="onglets-content">
+
+                    <div>
+                        <a href="#">La Bible en ligne</a>
+                        <a href="#">Revues</a>
+                        <a href="#">Livres & brochures</a>
+                        <a href="#">Rubriques</a>
+                    </div>
+
+                    <div>
+                        <a href="#">JW Télédiffusion</a>
+                        <a href="#">Vidéos</a>
+                        <a href="#">Musique</a>
+                        <a href="#">Représentations théâtrales (version audio)</a>
+                        <a href="#">Lectures bibliques théâtrales</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Cahiers Vie et ministère</a>
+                        <a href="#">Le ministère du Royaume</a>
+                        <a href="#">Bibliothèque en ligne</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-onglet="salle-de-presse" class="onglets">
+
+                <div class="bouton-fermer">
+                    <img src="icon/close.png" alt="fermer" height="15px" width="15px">
+                </div>
+
+                <div class="first-lien">
+                    <a href="#">Salle de presse</a>
+                </div>
+
+                <div class="onglets-content">
+
+                    <div>
+                        <a href="#">Actualités</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Actualités à l'intention des journalistes</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Veille juridique</a>
+                        <a href="#">Informations juridiques</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div data-onglet="qui-sommes-nous" class="onglets">
+
+                <div class="bouton-fermer">
+                    <img src="icon/close.png" alt="fermer" height="15px" width="15px">
+                </div>
+
+                <div class="first-lien">
+                    <a href="#">Qui sont les Témoins de Jéhovah ?</a>
+                </div>
+
+                <div class="onglets-content">
+
+                    <div>
+                        <a href="#">Questions fréquentes</a>
+                        <a href="#">Demandez une viite</a>
+                        <a href="#">Nous contacter</a>
+                        <a href="#">Béthels : infos et visites</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Offices</a>
+                        <a href="#">Mémorial</a>
+                        <a href="#">Rassemblements annuels</a>
+                    </div>
+
+                    <div>
+                        <a href="#">Activités</a>
+                        <a href="#">Témoignages et anecdotes</a>
+                        <a href="#">Aux 4 coins du monde</a>
+                        <a href="#">Dons</a>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <section id="section1">
                 <div id="section1-background"></div>
                 <div id="section1-content-background">
                     <div id="section1-content">
