@@ -145,15 +145,24 @@ header nav ul {
 header nav ul li {
     display: flex;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 12px;
     cursor: pointer;
     height: 100%;
     padding: 0 9px;
     line-height: 15px;
 }
 
+header nav ul li span img {
+    margin-right: 8px;
+}
+
 li:hover {
     background-color: black;
+}
+li.active {
+    background-color: black;
+    border-left: 1px dotted white;
+    border-right: 1px dotted white;
 }
 
 /* SECTION 1 */
@@ -621,7 +630,7 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-footer p, span {
+footer p, footer span {
     color: #eceae7;
     padding: 0 5px;
 }
