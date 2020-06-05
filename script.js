@@ -7,14 +7,18 @@ nav.forEach( li => {
 
     li.addEventListener('click', () => {
 
-        if(li.classList.contains('active')) {
+        if(li.classList.contains('active')) { // si on clique plusieurs fois sur le même onglet
             
             for(i=0; i<onglets.length; i++) {
                 if(onglets[i].classList.contains('active')) {
-                    onglets[i].classList.remove('active');
+                    removeActiveOnglet();
+                }
+                else {
+                    onglets[i].classList.add('active');
+                    console.log('weshh')
                 }
             }
-
+        
         }
         else {
 
