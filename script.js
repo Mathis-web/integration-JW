@@ -2,6 +2,7 @@
 
 let nav = document.querySelectorAll('nav ul li');
 let onglets = document.querySelectorAll('.onglets');
+let fermer = document.querySelectorAll('.bouton-fermer')
 
 nav.forEach( li => {
 
@@ -23,18 +24,14 @@ nav.forEach( li => {
             removeActiveOnglet();
 
             // suppression de classe active du li actif
-            for(i=0; i<nav.length; i++) {
-                if(nav[i].classList.contains('active')) {
-                    nav[i].classList.remove('active');
-                }
-            }
+            removeActiveLi();
 
             // ajout de la classe active sur le li cliqué
             li.classList.add('active');
 
             // ajout de l'onglet correspondant au li actif
             for(j=0; j<onglets.length; j++) {
-                if(li.getAttribute('data-onglet') === onglets[j].getAttribute('data-onglet')) {
+                if (li.getAttribute('data-onglet') === onglets[j].getAttribute('data-onglet')) {
                     onglets[j].classList.add('active');
                 }
             }
@@ -45,10 +42,28 @@ nav.forEach( li => {
 
 })
 
+fermer.forEach( croix => {  // si on clique sur la croix
+
+    croix.addEventListener('click', () => {
+        removeActiveOnglet();
+        removeActiveLi();
+    })
+
+})
+
+
 function removeActiveOnglet() {
     for(i=0; i<onglets.length; i++) {
         if(onglets[i].classList.contains('active')) {
             onglets[i].classList.remove('active');
+        }
+    }
+}
+
+function removeActiveLi() {
+    for(i=0; i<nav.length; i++) {
+        if(nav[i].classList.contains('active')) {
+            nav[i].classList.remove('active');
         }
     }
 }
