@@ -12,10 +12,7 @@ nav.forEach( li => {
             for(i=0; i<onglets.length; i++) {
                 if(onglets[i].classList.contains('active')) {
                     removeActiveOnglet();
-                }
-                else {
-                    onglets[i].classList.add('active');
-                    console.log('weshh')
+                    li.classList.remove('active');
                 }
             }
         
