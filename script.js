@@ -67,3 +67,45 @@ function removeActiveLi() {
         }
     }
 }
+
+// slider videos
+
+let nextBtn = document.querySelector('#next-btn');
+let precedentBtn = document.querySelector('#precedent-btn');
+let slider = document.querySelector('#slider-videos');
+let slideNumber = 0;
+
+
+nextBtn.addEventListener('click', nextSlide);
+precedentBtn.addEventListener('click', precedentSlide);
+
+function nextSlide() {
+    slideNumber++;
+    slide();
+}
+
+function precedentSlide() {
+    slideNumber--;
+    slide();
+}
+
+function slide() {
+    switch (slideNumber) {
+        case 0:
+            precedentBtn.style.display = "none";
+            slider.style.transform ="translateX(0px)";
+            break;
+        case 1:
+            precedentBtn.style.display = "flex";
+            nextBtn.style.display = "flex";
+            slider.style.transform ="translateX(-1000px)";
+            break;
+        case 2:
+            nextBtn.style.display = "none";
+            slider.style.transform = "translateX(-2000px)";
+            break;
+
+        default:
+            break;
+    }
+}
