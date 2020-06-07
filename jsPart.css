@@ -1,0 +1,49 @@
+/* SYSTEME D'ONGLETS */
+
+.onglets {
+    padding: 70px 90px;
+    background-color: #f7f7f7;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.onglets.active {
+    display: block;
+}
+
+.onglets a:hover{
+    text-decoration: underline;
+}
+
+.bouton-fermer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0 8px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+} 
+.bouton-fermer:hover {
+    background-color: #dee7f1;
+}
+
+.onglets-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.onglets-content a {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.onglets-content div {
+    width: 30%;
+}
+
+.first-lien {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #999;
+    padding-bottom: 20px;
+}
