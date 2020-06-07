@@ -1,0 +1,130 @@
+/* SYSTEME D'ONGLETS */
+
+.onglets {
+    padding: 70px 90px;
+    background-color: #f7f7f7;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.onglets.active {
+    display: block;
+}
+
+.onglets a:hover{
+    text-decoration: underline;
+}
+
+.bouton-fermer {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0 8px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+} 
+.bouton-fermer:hover {
+    background-color: #dee7f1;
+}
+
+.onglets-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.onglets-content a {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.onglets-content div {
+    width: 30%;
+}
+
+.first-lien {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted #999;
+    padding-bottom: 20px;
+}
+
+/* slider videos */
+
+#slider{
+    position: relative;
+}
+
+#slider-content{
+    overflow: hidden;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+#slider-videos {
+    display: flex;
+    width: 3000px;
+    transform: translateX(0px);
+}
+
+#slider-videos .video-content{
+    margin-right: 25px;
+}
+
+#slider-videos .video{
+    position: relative; 
+}
+
+#slider-videos .video .video-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#slider-videos .video .play-btn{
+    width: 40px;
+    height: 35px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+#slider-videos .video-content .video-lien{
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 24px;
+}
+#slider-videos .video-content .video-lien:hover {
+    text-decoration: underline;
+}
+
+#slider-videos {
+    display: flex;
+    position: relative;
+}
+
+.nav-btn {
+    width: 40px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    cursor: pointer;
+}
+.nav-btn:hover {
+    background-color: #ebebeb;
+}
+.nav-btn img {
+    width: 24px;
+    height: 24px;
+}
+#next-btn {
+    right: -4%;
+    top: 11%;  
+}
+#precedent-btn{
+    top: 11%;
+    left: -5%;
+}
