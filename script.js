@@ -98,11 +98,11 @@ function slide() {
         case 1:
             precedentBtn.style.display = "flex";
             nextBtn.style.display = "flex";
-            slider.style.transform ="translateX(-1000px)";
+            slider.style.transform ="translateX(-33.3%)";
             break;
         case 2:
             nextBtn.style.display = "none";
-            slider.style.transform = "translateX(-2000px)";
+            slider.style.transform = "translateX(-66.6%)";
             break;
 
         default:
