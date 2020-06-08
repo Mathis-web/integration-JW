@@ -52,6 +52,7 @@
 
 #slider{
     position: relative;
+    width: 99%;
 }
 
 #slider-content{
@@ -62,7 +63,7 @@
 
 #slider-videos {
     display: flex;
-    width: 3000px;
+    width: 308%;
     transform: translateX(0px);
     transition: transform 0.7s;
 }
@@ -122,11 +123,11 @@
     height: 24px;
 }
 #next-btn {
-    right: -4%;
+    right: -6%;
     top: 11%;  
 }
 #precedent-btn{
     display: none;
     top: 11%;
-    left: -5%;
+    left: -6%;
 }
