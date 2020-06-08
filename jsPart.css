@@ -64,6 +64,7 @@
     display: flex;
     width: 3000px;
     transform: translateX(0px);
+    transition: transform 0.7s;
 }
 
 #slider-videos .video-content{
@@ -125,6 +126,7 @@
     top: 11%;  
 }
 #precedent-btn{
+    display: none;
     top: 11%;
     left: -5%;
 }
