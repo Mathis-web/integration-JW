@@ -23,7 +23,7 @@ body {
 }
 
 .container2 {
-    padding: 35px 72px;
+    padding: 35px 72px 0 72px ;
 }
 
 h3 {
@@ -63,6 +63,8 @@ li {
     position: absolute;
     top: 0;
     left: 0;
+    width: 80px;
+    height: 80px;
 }
 
 #header1 {
@@ -312,7 +314,7 @@ li.active {
     height: 350px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 30%);
+    /* grid-template-rows: repeat(3, 30%); */
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -496,6 +498,10 @@ li.active {
 
 /* SECTION 6 */
 
+#sec {
+    display: flex;
+}
+
 #section6 {
     padding: 45px 40px;
     background-color: #eceae7;
@@ -518,38 +524,42 @@ li.active {
 #section6-content {
     display: flex;
     justify-content: space-between;
+    width: 65%;
 }
 
 .section6-content-column {
-    width: 13%;
+    width: 23%;
 }
 
-.section6-content-column h5 {
+.section6-content-column h5, .liens-rapides h5 {
     border-bottom: 1px dotted #999;
     margin-bottom: 10px;
 }
 
-.section6-content-column:last-child {
+.liens-rapides {
     width: 35%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
 }
-.section6-content-column:last-child h5 {
+.liens-rapides h5 {
     padding: 6px 0;
     font-weight: normal;
     color: grey;
 }
 
-.section6-content-column a{
+.section6-content-column a, .liens-rapides a{
     display: block;
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     margin: 5px 0;
 }
-.section6-content-column a:hover {
+.section6-content-column a:hover, .liens-rapides a:hover {
     text-decoration: underline; 
 }
 
-.section6-content-column span img {
+.section6-content-column span img, .liens-rapides span img {
     width: 25px;
     height: 25px;
     margin-right: 8px;
@@ -607,4 +617,110 @@ footer a:hover{
 footer p, footer span {
     color: #eceae7;
     padding: 0 5px;
+}
+footer div{
+    display: flex;
+}
+
+@media screen and (max-width: 1030px) {
+    .container2 {padding: 13px 70px}
+    .container {overflow: hidden}
+
+    #section2 h3 {margin: 10px 0 0 0}
+
+    header nav ul {height: 50px}
+    #rechercher input {width: 200px}
+
+    #bible {width: 60%}
+    #bible img {height: 105px}
+    #bible-content h4 {margin-bottom: 3px}
+
+    #section4 #title {margin: 0 0 10px 0}
+    #section3 h3 {margin: 0 0 25px 0}
+    #video-description-content p {font-size: 16px; line-height: 22px}
+
+    #section5 {margin: 0;}
+    #section5 h4 {font-size: 30px; margin-bottom: 20px}
+    #description {width: 65%}
+    #description p {font-size: 17px; line-height: 27px;}
+
+}
+
+@media screen and (max-width: 965px) {
+    .container{width: 100%}
+    .container2 {padding: 13px 40px}
+    #header1 {height: 60px}
+    #logo {width: 60px; height: 60px}
+    header nav ul {padding: 0; justify-content: space-around;}
+
+    #sec {display: block}
+    #section6-content {width: 100%}
+    .liens-rapides {width: 100%; margin: 0;}
+
+    footer {display: block; height: 65px; padding-top: 10px}
+    footer div {justify-content: center;}
+}
+
+@media screen and (max-width: 900px) {
+    #header1 h1 {font-size: 16px; margin-left: 80px; width: 65%}
+    #rechercher input {width: 170px}
+
+    #bible-nouveautes {display: block; border-top: 1px solid #d4d4d4}
+    #bible {width: 100%; border-bottom: 1px solid #d4d4d4; border-right: none; padding: 40px 0}
+    #bible img {height: 130px}
+    #nouveautes {width: 100%; padding-top: 40px}
+
+    #categories {grid-template-columns: 1fr 1fr; height: 660px}
+
+    #action {display: block}
+    .proposition {display: flex; width: 100%; flex-direction: row; text-align: left; align-items: center;}
+    .proposition div {margin-right: 20px}
+    .proposition img {width: 190px}
+    .proposition p {margin: 10px 0}
+
+    #video-description-content {width: 40%; margin-right: 5%}
+}
+
+@media screen and (max-width: 750px) {
+    .container2 {padding: 13px 25px}
+
+    #section1 h2 {font-size: 23px}
+    #section1 p {font-size: 17px}
+    #section1-background {height: 280px;}
+    #section1-content-background {width: 90%; background-color: rgba(51,51,51,0.9); margin: -50px auto 0 auto; height: 200px}
+    #section1-content {width: 90%; margin:0 20px; display: flex; flex-direction: column; justify-content: flex-start;}
+    #section1-content a {margin: 10px 0}
+
+    #cartes {display: block}
+    #cartes .carte a img {width: 100%}
+
+    #slider #slider-content {overflow: auto; padding-bottom: 40px}
+    #slider #slider-videos {width: 390%}
+    #slider .nav-btn {display: none}
+
+    #who-are-we {display: block}
+    #description, #right-menu {width: 100%}
+    #description {margin-bottom: 25px}
+    .description-lien { padding: 10px 0}
+    #video-description-content {width: 50%}
+
+    #section6-content {display: none; padding: 30px 40px}
+}
+
+@media screen and (max-width: 520px) {
+    #section1 h2 {font-size: 21px}
+    #section1 p {font-size: 16px}
+
+    #categories {grid-template-columns: 1fr; height: 1200px}
+
+    #bible img {height: 80px}
+    #bible-content p {font-size: 15px; line-height: 20px;}
+    #nouveautes {padding: 20px 0 0 20px}
+
+    #slider #slider-videos {width: 700%}
+
+    .proposition {flex-direction: column; text-align: center}
+
+    #video-description-content {width: 60%}
+    #video-description-content .bouton-general {font-size: 18px; width: 220px}
 }
