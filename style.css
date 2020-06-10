@@ -78,26 +78,64 @@ li {
     align-items: center;
     justify-content: flex-end;
 }
+#mobile-navbar-icon span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 #mobile-navbar-icon span img {
     padding: 0 6px;
     margin: 0 7px;
-    cursor: pointer;
 }
 
 #menu-mobile {
     position: absolute;
     max-width: 500px;
     width: 80%;
-    height: 100%; 
+    height: 100%;
+    background-color: white; 
+    right: 0;
 }
 
-#menu-mobile nav ul {
+#menu-mobile nav #menu {
     display: flex;
     flex-direction: column;
 }
+#menu-mobile nav #menu .li-menu {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted #d4d4d4;
+    padding-left: 15px;
+    cursor: pointer;
+}
+#menu-mobile nav #menu .li-menu span {
+    margin-right: 10px;
+    color: #4a6da7;
+}
+#menu-mobile nav #menu .li-menu:hover {
+    background-color: rgb(240,240,240);
+}
+
+.btn-sous-menu {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.sous-menu {
+    display: block;
+}
 
 #mobile-navbar {display: none}
-/* HEADER */
+#menu-mobile {display: none; transition: margin-right 0.7s}; 
+
+/* HEADER desktop */
 
 #logo {
     position: absolute;
@@ -175,7 +213,7 @@ li {
     line-height: 10px;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     align-items: center;
     font-size: 87.5%;
@@ -185,7 +223,7 @@ nav ul {
     padding-left: 103px;
 }
 
-nav ul li {
+header nav ul li {
     display: flex;
     align-items: center;
     margin-right: 12px;
@@ -195,11 +233,11 @@ nav ul li {
     line-height: 15px;
 }
 
-nav ul li span img {
+header nav ul li span img {
     margin-right: 8px;
 }
 
-li:hover {
+#desktop-header header nav ul li:hover {
     background-color: black;
 }
 li.active {
@@ -690,7 +728,7 @@ footer div{
     .container{width: 100%}
     .container2 {padding: 13px 40px}
     #header1 {height: 60px}
-    #logo {width: 60px; height: 60px}
+    #logo {width: 60px; height: 60px; position: absolute}
     header nav ul {padding: 0; justify-content: space-around;}
 
     #sec {display: block}
@@ -725,6 +763,7 @@ footer div{
 @media screen and (max-width: 750px) {
     #desktop-header {display: none}
     #mobile-navbar {display: block}
+    #menu-mobile {margin-right: -500px; display: block}
 
     .container2 {padding: 13px 25px}
 
@@ -741,6 +780,8 @@ footer div{
     #slider #slider-content {overflow: auto; padding-bottom: 40px}
     #slider #slider-videos {width: 390%}
     #slider .nav-btn {display: none}
+    #next-btn {display: none}
+    #precedent-btn {display: none}
 
     #who-are-we {display: block}
     #description, #right-menu {width: 100%}
