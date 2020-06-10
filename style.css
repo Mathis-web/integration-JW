@@ -57,6 +57,46 @@ li {
     background-color: #3a5684;
 }
 
+/* header mobile */
+#mobile-navbar header{
+    height: 50px;
+    background-color: rgb(55,52,51);
+    position: relative;
+}
+
+#logoNav {
+    height: 50px;
+    width: 50px;
+}
+
+#mobile-navbar header {
+    display: flex;
+}
+#mobile-navbar-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#mobile-navbar-icon span img {
+    padding: 0 6px;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+#menu-mobile {
+    position: absolute;
+    max-width: 500px;
+    width: 80%;
+    height: 100%; 
+}
+
+#menu-mobile nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-navbar {display: none}
 /* HEADER */
 
 #logo {
@@ -135,7 +175,7 @@ li {
     line-height: 10px;
 }
 
-header nav ul {
+nav ul {
     display: flex;
     align-items: center;
     font-size: 87.5%;
@@ -145,7 +185,7 @@ header nav ul {
     padding-left: 103px;
 }
 
-header nav ul li {
+nav ul li {
     display: flex;
     align-items: center;
     margin-right: 12px;
@@ -155,7 +195,7 @@ header nav ul li {
     line-height: 15px;
 }
 
-header nav ul li span img {
+nav ul li span img {
     margin-right: 8px;
 }
 
@@ -661,6 +701,7 @@ footer div{
     footer div {justify-content: center;}
 }
 
+
 @media screen and (max-width: 900px) {
     #header1 h1 {font-size: 16px; margin-left: 80px; width: 65%}
     #rechercher input {width: 170px}
@@ -682,6 +723,9 @@ footer div{
 }
 
 @media screen and (max-width: 750px) {
+    #desktop-header {display: none}
+    #mobile-navbar {display: block}
+
     .container2 {padding: 13px 25px}
 
     #section1 h2 {font-size: 23px}
