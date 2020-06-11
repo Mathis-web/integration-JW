@@ -1,6 +1,6 @@
 // ajout et suppression de la classe active sur les onglets et leurs divs correspondantes
 
-let nav = document.querySelectorAll('nav ul li');
+let nav = document.querySelectorAll('#desktop-nav ul li');
 let onglets = document.querySelectorAll('.onglets');
 let fermer = document.querySelectorAll('.bouton-fermer')
 
@@ -107,5 +107,86 @@ function slide() {
 
         default:
             break;
+    }
+}
+
+
+// menu sur mobile
+
+let menu = document.querySelector('#mobile-navbar-icon span:last-child');
+let btnMenu = document.querySelectorAll('.btn-sous-menu img');
+let listeMenu = document.querySelectorAll('.li-sous-menu');
+let body = document.querySelector('body')
+let menuOpen = false;
+
+menu.addEventListener('click', () => {
+
+
+    if (menuOpen == false) {
+        document.querySelector('#menu-mobile').style.marginRight = "0";
+        menuOpen = true;
+        body.style.filter = "brightness(50%)";
+        document.querySelector('#menu-mobile').style.filter = "brightness(100%)";
+
+    } else {
+        document.querySelector('#menu-mobile').style.marginRight = "-500px";
+        menuOpen = false;
+        body.style.filter = "brightness(100%)";
+    }
+
+    desactiveScroll();
+})
+
+btnMenu.forEach( btn => {
+    btn.addEventListener('click', () => {
+
+        let sousMenu = btn.parentNode.parentNode;
+
+        if (btn.classList.contains('active')) {
+
+            btn.classList.remove('active');
+            removeActiveSousMenu();
+
+        } else {
+
+            removeActiveSousMenu();
+            removeActiveBtn();
+
+            btn.classList.add('active');
+
+            for (let i = 0; i < listeMenu.length; i++) {
+                if (sousMenu.getAttribute('data-sous-menu') === listeMenu[i].getAttribute('data-sous-menu')) {
+                    listeMenu[i].classList.add('active')
+                }   
+            }
+                   
+        }
+
+    })
+});
+
+function removeActiveSousMenu() {
+    for (let i = 0; i < listeMenu.length; i++) {
+        if (listeMenu[i].classList.contains('active')) {
+            listeMenu[i].classList.remove('active')
+        }
+        
+    }
+}
+
+function removeActiveBtn() {
+    for (i=0; i<btnMenu.length; i++) {
+        if(btnMenu[i].classList.contains('active')) {
+            btnMenu[i].classList.remove('active');
+        }
+    }
+}
+
+// desactive le scroll de la page lorsque le menu pour mobile est ouvert
+
+function desactiveScroll() {
+    if (menuOpen == true) {
+        body.style.overflowY = "hidden";
+        console.log('ca larche ?')
     }
 }
