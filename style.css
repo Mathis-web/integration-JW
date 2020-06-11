@@ -58,10 +58,11 @@ li {
 }
 
 /* header mobile */
-#mobile-navbar header{
+#mobile-navbar header {
     height: 50px;
     background-color: rgb(55,52,51);
-    position: relative;
+    position: fixed;
+    width: 100%;
 }
 
 #logoNav {
@@ -71,6 +72,7 @@ li {
 
 #mobile-navbar header {
     display: flex;
+    box-shadow: 1px -3px 14px rgba(0,0,0,0.4);
 }
 #mobile-navbar-icon {
     width: 100%;
@@ -90,12 +92,14 @@ li {
 }
 
 #menu-mobile {
-    position: absolute;
+    position: fixed;
     max-width: 500px;
     width: 80%;
     height: 100%;
     background-color: white; 
     right: 0;
+    top: 50px;
+    overflow-y: scroll;
 }
 
 #menu-mobile nav #menu {
@@ -118,18 +122,43 @@ li {
     background-color: rgb(240,240,240);
 }
 
+.ul-sous-menu {
+    background-color: #f7f7f7;
+    padding-left: 40px;
+}
+.ul-sous-menu li {
+    font-size: 16px;
+    color: #4a6da7;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
 .btn-sous-menu {
     position: absolute;
     right: 10px;
     display: flex;
     align-items: center;
-    padding: 5px;
+    justify-content: center;
     background-color: #f7f7f7;
     border: 1px solid rgb(200, 200, 200);
+    width: 40px;
+    height: 40px;
 }
 
-.sous-menu {
+.btn-sous-menu img {
+    transform: rotate(0deg);
+    transition: transform 0.5s;
+    width: 15px;
+}
+.btn-sous-menu img.active {
+    transform: rotate(180deg);
+}
+.li-sous-menu {
+    display: none;
+}
+.li-sous-menu.active {
     display: block;
+    border: none;
 }
 
 #mobile-navbar {display: none}
@@ -141,8 +170,6 @@ li {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80px;
-    height: 80px;
 }
 
 #header1 {
@@ -767,6 +794,7 @@ footer div{
 
     .container2 {padding: 13px 25px}
 
+    #section1-background {margin-top: 50px}
     #section1 h2 {font-size: 23px}
     #section1 p {font-size: 17px}
     #section1-background {height: 280px;}
