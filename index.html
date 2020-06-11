@@ -28,11 +28,12 @@
 
             <div id="menu-mobile">
                 <nav>
-                    <ul id="menu">
+                    <ul id="menu">  <!-- chaque li est suivi de son sous-menu -->
                         <li class="li-menu">
                             <span><img src="icon/home-run.png" alt="fleche"></span>
                             <span>ACCUEIL</span>
                         </li>
+
                         <li class="li-menu" data-sous-menu="la-bible-et-vous">
                             <span><img src="icon/bookGrey.png" alt="fleche"></span>
                             <span>LA BIBLE ET VOUS</span>
@@ -54,45 +55,82 @@
                                 <li>La Bible et la Science</li>
                             </ul>
                         </li>
-                        <!-- <li class="li-menu">
+
+                        <li class="li-menu" data-sous-menu="bibliotheque">
                             <span><img src="icon/video-player.png" alt="fleche"></span>
                             <span>BIBLIOTHEQUE</span>
                             <div class="btn-sous-menu">
                                 <img src="icon/bottom.png" alt="fleche">
                             </div>
                         </li>
-                        <li class="li-menu">
+                        <li class="li-sous-menu" data-sous-menu="bibliotheque">
+                            <ul class="ul-sous-menu">
+                                <li>La Bible en ligne</li>
+                                <li>Revues</li>
+                                <li>Livres & brochures</li>
+                                <li>Rubriques</li>
+                                <li>Cahiers Vie et ministère</li>
+                                <li>Le ministère du Royaume</li>
+                                <li>Musique</li>
+                                <li>Représentztions théâtrales (version audio)</li>
+                                <li>Lectures bibliques théâtrales</li>
+                                <li>Vidéos</li>
+                                <li>JW Télédiffusion</li>
+                                <li>Bibliothèque en ligne</li>
+                            </ul>
+                        </li>
+
+                        <li class="li-menu" data-sous-menu="salle-de-presse">
                             <span><img src="icon/interneGreyt.png" alt="fleche"></span>
                             <span>SALLE DE PRESSE</span>
                             <div class="btn-sous-menu">
                                 <img src="icon/bottom.png" alt="fleche">
                             </div>
                         </li>
-                        <li class="li-menu">
+                        <li class="li-sous-menu" data-sous-menu="salle-de-presse">
+                            <ul class="ul-sous-menu">
+                                <li>Actualités</li>
+                                <li>Actualités à l'intention des journalistes</li>
+                                <li>Veille juridique</li>
+                            </ul>
+                        </li>
+
+                        <li class="li-menu"   data-sous-menu="qui-sommes-nous">
                             <span><img src="icon/person.png" alt="fleche"></span>
                             <span>QUI SOMMES NOUS ?</span>
                             <div class="btn-sous-menu">
                                 <img src="icon/bottom.png" alt="fleche">
                             </div>
                         </li>
+                        <li class="li-sous-menu" data-sous-menu="qui-sommes-nous">
+                            <ul class="ul-sous-menu">
+                                <li>Questions fréquentes</li>
+                                <li>Demandez une visite</li>
+                                <li>Offices</li>
+                                <li>Mémorial</li>
+                                <li>Rasssemblements annuels</li>
+                                <li>Activités</li>
+                                <li>Témoignages et anecdotes</li>
+                                <li>Aux 4 cions du monde</li>
+                                <li>Béthels : infos et visites</li>
+                                <li>Nous contacter</li>
+                                <li>Dons</li>
+                            </ul>
+                        </li>
+
                         <li class="li-menu">
                             <span><img src="icon/userGrey.png" alt="fleche"></span>
                             <span>CONNEXION</span>
-                            <div class="btn-sous-menu">
-                                <img src="icon/bottom.png" alt="fleche">
-                            </div>
-                        </li> -->
+                        </li>
                     </ul>
                 </nav>
             </div>
 
             <div id="desktop-header">
                 <header>
-                    <div id="logo">
-                        <img src="img/logoJW.png">
-                    </div>
+                    <!-- <img src="img/logoJW.png" id="logo"> -->
                     <div id="header1">
-
+                        <img id="logo" width="80px" height="80px" style="position: absolute; top: 0; left: 0;" src="img/logoJW.png">
                         <h1>Les Témoins de Jéhovah</h1>
 
                         <div id="droite">
