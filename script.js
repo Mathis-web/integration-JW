@@ -116,7 +116,7 @@ function slide() {
 let menu = document.querySelector('#mobile-navbar-icon span:last-child');
 let btnMenu = document.querySelectorAll('.btn-sous-menu img');
 let listeMenu = document.querySelectorAll('.li-sous-menu');
-let body = document.querySelector('body')
+let container = document.querySelector('.container');
 let menuOpen = false;
 
 menu.addEventListener('click', () => {
@@ -125,13 +125,13 @@ menu.addEventListener('click', () => {
     if (menuOpen == false) {
         document.querySelector('#menu-mobile').style.marginRight = "0";
         menuOpen = true;
-        body.style.filter = "brightness(50%)";
+        container.style.filter = "brightness(40%)";
         document.querySelector('#menu-mobile').style.filter = "brightness(100%)";
 
     } else {
         document.querySelector('#menu-mobile').style.marginRight = "-500px";
         menuOpen = false;
-        body.style.filter = "brightness(100%)";
+        container.style.filter = "brightness(100%)";
     }
 
     desactiveScroll();
@@ -156,8 +156,24 @@ btnMenu.forEach( btn => {
 
             for (let i = 0; i < listeMenu.length; i++) {
                 if (sousMenu.getAttribute('data-sous-menu') === listeMenu[i].getAttribute('data-sous-menu')) {
-                    listeMenu[i].classList.add('active')
+                    listeMenu[i].classList.add('active');
                 }   
+            }
+
+            switch (sousMenu.getAttribute('data-sous-menu')) {
+                case "la-bible-et-vous":
+                    document.querySelector('.li-sous-menu.active').style.height = "360px";
+                    break;
+                case "bibliotheque":
+                    document.querySelector('.li-sous-menu.active').style.height = "450px";
+                    break;
+                case "salle-de-presse":
+                    document.querySelector('.li-sous-menu.active').style.height ="130px";
+                    break;
+                case "qui-sommes-nous":
+                    document.querySelector('.li-sous-menu.active').style.height = "390px";
+                default:
+                    break;
             }
                    
         }
@@ -168,7 +184,8 @@ btnMenu.forEach( btn => {
 function removeActiveSousMenu() {
     for (let i = 0; i < listeMenu.length; i++) {
         if (listeMenu[i].classList.contains('active')) {
-            listeMenu[i].classList.remove('active')
+            listeMenu[i].classList.remove('active');
+            listeMenu[i].style.height ="0";
         }
         
     }
@@ -182,11 +199,15 @@ function removeActiveBtn() {
     }
 }
 
+
+
 // desactive le scroll de la page lorsque le menu pour mobile est ouvert
 
 function desactiveScroll() {
     if (menuOpen == true) {
-        body.style.overflowY = "hidden";
-        console.log('ca larche ?')
+        container.style.height = "800px";
+        container.style.overflowY = "hidden";
+    } else {
+        container.style.height = "100%";
     }
 }
